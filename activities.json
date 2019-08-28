@@ -1,0 +1,29 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Play Paper",
+          "price": 35.00,
+          "image": { "fields": { "file": { "url": "https://kidlycatalogue.blob.core.windows.net/products/5955/product-images/white-forest-5/olli-ella-playpa-paper-roll-white-forest-500x500_02.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Porch Pouch",
+          "price": 50.00,
+          "image": { "fields": { "file": { "url": "https://kidlycatalogue.blob.core.windows.net/products/8554/product-images/grey-2/franck-and-fischer-mynte-pencil-case-grey-500x500_02.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Rainbow",
+          "price": 55.00,
+          "image": { "fields": { "file": { "url": "https://kidlycatalogue.blob.core.windows.net/products/8563/product-images/multi-neon-1/dena-rainbow-multi-neon-500x500_01.jpg" } } }
+        }
+      }
+    ]
+  }
+  

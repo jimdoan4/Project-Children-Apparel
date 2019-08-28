@@ -1,0 +1,711 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+/***************************** FONTS *****************************/
+@font-face {
+  font-family: 'muse-500';
+  src: url('../fonts/museosans-500.otf');
+}
+
+@font-face {
+  font-family: 'muse-300';
+  src: url('../fonts/museosansrounded-300-webfont.ttf'), url('../fonts/museosansrounded-300-webfont.woff'), url('../fonts/museosansrounded-300-webfont.svg');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('../fonts/OpenSans-SemiBold.ttf');
+}
+
+:root {
+  --primaryColor: white;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #ffffff;
+}
+
+body {
+  background-color: white;
+  color: #2a2b2b;
+  font-family: "muse-300", Georgia, serif;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 0.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "muse-300", Georgia, serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-family: "muse-300", Georgia, serif;
+}
+
+h3 {
+  font-size: 21px;
+  font-family: "muse-300", Georgia, serif;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: "muse-300", Georgia, serif;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
+
+.centers {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center!important;
+
+}
+a {
+  color: black;
+}
+.iconic {
+  width:40%;
+  text-align:right;
+  padding-right: 10px;
+}
+
+#navbar {
+  padding: 10px 20px;
+  border: none;
+  background: #ffffff;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+
+#navbar .navbar-toggler {
+  background: green;
+  border: none;
+}
+
+#navbar .navbar-nav .nav-item .nav-link {
+  color: #000000;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: "muse-500", Arial, sans-serif;
+  transition: all 0.3s ease-out;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+#navbar .navbar-nav .nav-item .nav-link.active,
+#navbar .navbar-nav .nav-item .nav-link:hover {
+  color: green !important;
+  transition: all 0.5s ease-out;
+  border: solid 2px;
+}
+
+/* --------------- Navbar ---------------- */
+
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}
+/* --------------- End of Navbar ---------------- */
+/* --------------- MAIN HOME PAGE ---------------- */
+.main-header {
+  min-height: calc(100vh - 60px);
+  background: url("https://www.gap.com/Asset_Archive/GPWeb/content/0017/379/277/assets/unrec_01/G26739_KT_EarlyBTSBacktoSchool_HPMain_DESK.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------- BOYS/SHOP SECTION ---------------- */
+.boys-header-img {
+  min-height: calc(130vh - 640px);
+  background: url("https://media1.popsugar-assets.com/files/thumbor/xQs33SBWg1zqR6wS_djMWl_LJPk/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2018/08/21/593/n/24155406/8f06a4eeed52a9b0_S03_KB_18_FA_GG_OF_SJP_055_LR/i/Sarah-Jessica-Parker-Gap-Kids-Collection-Fall-2018.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boys-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  text-align: center!important;
+}
+
+.products {
+  padding: 4rem 0;
+}
+
+/* --------------- ACTIVITIES SECTION ---------------- */
+.activities-header-img {
+  min-height: calc(130vh - 640px);
+  background: url("http://stefanoazario.com/wp-content/uploads/2017/03/UNIQLO_KIDS_SS17_STUDIO-13.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.activities-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  text-align: center!important;
+}
+
+.activities {
+  padding: 4rem 0;
+}
+
+/* --------------- TOYS SECTION ---------------- */
+.toys-header-img {
+  min-height: calc(130vh - 640px);
+  background: url("https://cdn-ssl.s7.disneystore.com/is/image/ShopDisney/mb_baby-clothing_20190701_2x?$xlargeFull$&fit=constrain&cropN=0,0,1,1") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.toys-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  text-align: center!important;
+}
+
+.toys {
+  padding: 4rem 0;
+}
+
+/* --------------- LIVING SECTION---------------- */
+.furnitures-header-img {
+  min-height: calc(130vh - 640px);
+  background: url("https://images.crateandbarrel.com/is/image/Crate/ck_dHP_20190809_Kids_UphlstryEvntHero?wid=1680&qlt=90") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.furnitures-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  text-align: center!important;
+}
+
+
+.furnitures {
+  padding: 4rem 0;
+}
+
+
+
+/* --------------- ABOUT US SECTION ---------------- */
+
+.about-header-img {
+  min-height: calc(130vh - 640px);
+  background: url("https://us.hola.com/en/imagenes/fashion/2018022111387/sarah-jessica-parker-gap-kids-collection/0-21-41/sarah-jessica-parker-gap-kids-1t-t.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  padding: 4rem 0;
+}
+
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 2rem;
+}
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 3rem;
+}
+.banner-btn {
+  padding: 1.5rem 4.7rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1.7rem;
+  font-weight: bold;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  margin-top: 90px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: black;
+}
+
+/* --------------- Cart ---------------- */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: var(--mainTransition);
+  background: rgb(240, 157, 81, 0.5);
+  z-index: 2;
+  visibility: hidden;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background: var(--mainWhite);
+  z-index: 3;
+  background: rgb(231, 226, 221);
+  padding: 1.5rem;
+  transition: var(--mainTransition);
+  transform: translateX(100%);
+}
+.showCart {
+  transform: translateX(0);
+}
+.transparentBcg {
+  visibility: visible;
+}
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+.close-cart {
+  font-size: 4rem;
+  cursor: pointer;
+}
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 2rem;
+}
+
+.banner-btns {
+  padding: 1rem 2.7rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: .9rem;
+  font-weight: bold;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+.banner-btns:hover {
+  background: transparent;
+  color: black;
+}
+
+/*---------- Cart Item -------------------- */
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.cart-item img {
+  width: 145px;
+  height: 145px;
+}
+.cart-item h4 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.cart-item h5 {
+  margin: 0.2rem 0;
+  font-size: 1.1rem;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 50px;;
+}
+.item-amount {
+  text-align: center;
+  font-weight: bold;
+ 
+}
+.remove-item {
+  color: black;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+/*---------- End of Cart Item -------------------- */
+
+.cart-footer {
+  margin-top: .3rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/* --------------- End of Cart ---------------- */
+
+/* --------------- BAGS ---------------- */
+
+.section-title h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.bag-btn {
+  /* position: absolute; */
+  /* top: 70%;
+  right: 0; */
+  background: #edebe4;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: var(--mainSpacing);
+  font-weight: bold;
+  /* transition: var(--mainTransition);
+  transform: translateX(101%); */
+  cursor: pointer;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+.bag-btn:hover {
+  color: black;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+
+.fa-shopping-cart {
+  margin-right: 0.5rem;
+}
+.img-container:hover .bag-btn {
+  transform: translateX(0);
+}
+.product-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: var(--mainTransition);
+}
+
+.toy-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: var(--mainTransition);
+}
+.activity-img{
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: var(--mainTransition);
+}
+.furniture-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: var(--mainTransition);
+}
+.img-container:hover .product-img {
+  opacity: 0.5;
+}
+
+.product .toys .activities .furnitures .about h3 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center!important;
+}
+
+.product .toys .activities .furnitures .about h4 {
+  margin-top: 0.7rem;
+  letter-spacing: var(--mainSpacing);
+  color: var(--primaryColor);
+  text-align: center!important;
+}
+
+/********************************* ABOUT ***********************************/
+#about {
+  padding: 50px 0;
+  font-family: "muse-500", Arial, sans-serif;
+}
+
+#about .container .row .col-md-4 .card a img {
+  opacity: 0.7;
+  height: 100px;
+}
+
+#about .container .row .col-md-4 .card a img:hover {
+  opacity: 1;
+  transition: all 0.7s ease-out;
+}
+
+#about .container .row .col-md-4 .card .card-text {
+  line-height: 1.3;
+}
+/**************************** FOOTER ***************************/
+footer {
+  padding: 20px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  background: #edebe4;
+  color: black;
+}
+
+footer .container-fluid .social {
+  margin-bottom: 10px;
+}
+
+footer .container-fluid .social a {
+  color: #2a2b2b;
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+footer .container-fluid .copyright-area p {
+  color: #2a2b2b;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.note p {
+  color: #2a2b2b;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+footer .container-fluid .copyright-area p a {
+  color: #2a2b2b;
+  text-decoration: none;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/**************************** MEDIA-QUERY ***************************/
+@media only screen and (min-width: 300px) {
+  /* #navbar {
+    box-shadow: 1px .5px 0px #5a6175;
+  } */
+
+  #navbar.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ffffff;
+    color: black;
+  }
+}

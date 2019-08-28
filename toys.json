@@ -1,0 +1,29 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Aura Rabbit Musical Toy",
+          "price": 35.00,
+          "image": { "fields": { "file": { "url": "https://kidlycatalogue.blob.core.windows.net/products/8535/product-images/white-off-white-1/franck-and-fischer-aura-rabbit-musical-toy-white-off-white-500x500_02.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Wooden Rocking Chair",
+          "price": 70.00,
+          "image": { "fields": { "file": { "url": "https://kidlycatalogue.blob.core.windows.net/products/8695/product-images/white-1/jabadabado-wooden-rocking-horse-white-500x500_02.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Plush Rocking Chair",
+          "price": 55.00,
+          "image": { "fields": { "file": { "url": "https://kidlycatalogue.blob.core.windows.net/products/8694/product-images/white-1/jabadabado-plush-unicorn-rocking-horse-white-500x500_02.jpg" } } }
+        }
+      }
+    ]
+  }
+  

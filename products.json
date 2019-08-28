@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Grey Shirt",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "https://kidlycatalogue.blob.core.windows.net/products/8144/product-images/grey-grey-marl-4/kidly-short-sleeve-t-shirt-19-grey-grey-marl-500x500_02.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Comfy Pants",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "https://kidlycatalogue.blob.core.windows.net/products/7768/product-images/neutral-natural-9/kidly-ribbed-legging-neutral-natural-500x500_02.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Sweat Shirt",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "https://kidlycatalogue.blob.core.windows.net/products/8460/product-images/blue-niagra-2/kidly-towelling-sweatshirt-blue-niagra-500x500_02.jpg" } } }
+      }
+    }
+  ]
+}
