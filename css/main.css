@@ -203,7 +203,24 @@ h5 {
   font-weight: bold;
 }
 
+.btn-custom {
+  color: #ffffff;
+  background-color: #d145ac;
+  font-size: 18px;
+  font-family: "muse-500", Arial, sans-serif;
+  transition: 0.3s all ease-out;
+}
 
+.btn-custom:hover {
+  box-shadow: 1px 3px 12px 0px #b3b3b3;
+  color: #2a2b2b;
+  background: #ffebf9;
+}
+
+.card {
+  border-color: white;
+  margin-bottom: 15px;
+}
 .center {
   display: block;
   margin-left: auto;
@@ -226,12 +243,17 @@ a {
   text-align:right;
   padding-right: 10px;
 }
+ .iconic i{
+  color: black!important;
+} 
+
 
 #navbar {
   padding: 10px 20px;
   border: none;
   background: #ffffff;
   transition: padding-top 0.3s, padding-bottom 0.3s;
+  height: 70px;
 }
 
 #navbar .navbar-toggler {
@@ -382,8 +404,6 @@ a {
   padding: 4rem 0;
 }
 
-
-
 /* --------------- ABOUT US SECTION ---------------- */
 
 .about-header-img {
@@ -410,6 +430,7 @@ a {
   letter-spacing: var(--mainSpacing);
   margin-bottom: 3rem;
 }
+
 .banner-btn {
   padding: 1.5rem 4.7rem;
   text-transform: uppercase;
@@ -427,6 +448,7 @@ a {
 .banner-btn:hover {
   background: transparent;
   color: black;
+  border: 1px solid black;
 }
 
 /* --------------- Cart ---------------- */
@@ -697,11 +719,64 @@ ul {
 }
 
 /**************************** MEDIA-QUERY ***************************/
-@media only screen and (min-width: 300px) {
-  /* #navbar {
-    box-shadow: 1px .5px 0px #5a6175;
-  } */
 
+@media only screen and (max-width: 414px) {
+
+  .main-img {
+    width: 242px;
+    height: 280px;
+  }
+
+  .banner-btn {
+    padding: 1.5rem 4.7rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: .9rem;
+    font-weight: bold;
+    background: var(--primaryColor);
+    color: var(--mainBlack);
+    border: 1px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    cursor: pointer;
+    margin-top: 90px;
+    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  }
+ 
+  .main-header {
+    min-height: calc(100vh - 240px);
+    background: url("https://www.gap.com/Asset_Archive/GPWeb/content/0017/379/277/assets/unrec_01/G26739_KT_EarlyBTSBacktoSchool_HPMain_DESK.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col p {
+   margin-left: -30px!important;
+    margin-right: -30px!important;
+    font-size: 13px;
+  }
+
+  .about-resp  {
+   padding-left: 0px!important;
+    margin-right: -95px!important; 
+    width: 100%;
+    font-size: 13px!important;
+  }
+  .navbar-brand img{
+    width: 80px;
+    height: 60px;
+    margin-top: -10px
+  }
+
+  .icon-end {
+    padding-top: 25px;
+   
+  }
+  .iconic-media {
+    text-indent: 220%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
   #navbar.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
