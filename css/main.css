@@ -467,6 +467,7 @@ a {
 .cart {
   position: fixed;
   top: 0;
+  margin-top: -14px;
   right: 0;
   width: 100%;
   height: 100%;
@@ -477,6 +478,7 @@ a {
   padding: 1.5rem;
   transition: var(--mainTransition);
   transform: translateX(100%);
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
 }
 .showCart {
   transform: translateX(0);
@@ -533,14 +535,16 @@ a {
   width: 145px;
   height: 145px;
 }
+
+
 .cart-item h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
 .cart-item h5 {
   margin: 0.2rem 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 50px;;
 }
@@ -552,7 +556,7 @@ a {
 .remove-item {
   color: black;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .fa-chevron-up,
 .fa-chevron-down {
