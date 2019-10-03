@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
 /***************************** FONTS *****************************/
 @font-face {
   font-family: 'muse-500';
@@ -28,11 +29,13 @@
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   background-color: #ffffff;
 }
@@ -56,6 +59,7 @@ a {
 a:hover {
   text-decoration: none;
 }
+
 html,
 body,
 div,
@@ -221,6 +225,7 @@ h5 {
   border-color: white;
   margin-bottom: 15px;
 }
+
 .center {
   display: block;
   margin-left: auto;
@@ -232,22 +237,26 @@ h5 {
 .centers {
   margin-left: auto;
   margin-right: auto;
-  text-align: center!important;
+  text-align: center !important;
 
 }
+
 a {
   color: black;
 }
+
 .iconic {
-  width:40%;
-  text-align:right;
+  width: 40%;
+  text-align: right;
   padding-right: 10px;
 }
- .iconic i{
-  color: black!important;
-} 
+
+.iconic i {
+  color: black !important;
+}
 
 
+/* --------------- NAVBAR ---------------- */
 #navbar {
   padding: 10px 20px;
   border: none;
@@ -279,13 +288,14 @@ a {
   border: solid 2px;
 }
 
-/* --------------- Navbar ---------------- */
+/* --------------- CART-SECTION ---------------- */
 
 .cart-btn {
   position: relative;
   cursor: pointer;
   font-size: 20px;
 }
+
 .cart-items {
   position: absolute;
   top: -8px;
@@ -295,7 +305,7 @@ a {
   border-radius: 30%;
   color: var(--mainWhite);
 }
-/* --------------- End of Navbar ---------------- */
+
 /* --------------- MAIN HOME PAGE ---------------- */
 .main-header {
   min-height: calc(100vh - 60px);
@@ -322,7 +332,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .products {
@@ -347,11 +357,18 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .activities {
   padding: 4rem 0;
+}
+
+.activity-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: var(--mainTransition);
 }
 
 /* --------------- TOYS SECTION ---------------- */
@@ -372,11 +389,18 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .toys {
   padding: 4rem 0;
+}
+
+.toy-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: var(--mainTransition);
 }
 
 /* --------------- LIVING SECTION---------------- */
@@ -396,16 +420,21 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
-  text-align: center!important;
+  text-align: center !important;
 }
-
 
 .furnitures {
   padding: 4rem 0;
 }
 
-/* --------------- ABOUT US SECTION ---------------- */
+.furniture-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: var(--mainTransition);
+}
 
+/* --------------- ABOUT US SECTION ---------------- */
 .about-header-img {
   min-height: calc(130vh - 640px);
   background: url("https://us.hola.com/en/imagenes/fashion/2018022111387/sarah-jessica-parker-gap-kids-collection/0-21-41/sarah-jessica-parker-gap-kids-1t-t.jpg") center/cover no-repeat;
@@ -424,6 +453,7 @@ a {
   display: inline-block;
   padding: 2rem;
 }
+
 .banner-title {
   font-size: 3.4rem;
   text-transform: uppercase;
@@ -445,13 +475,33 @@ a {
   margin-top: 90px;
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
 }
+
 .banner-btn:hover {
   background: transparent;
   color: black;
   border: 1px solid black;
 }
 
-/* --------------- Cart ---------------- */
+#about {
+  padding: 50px 0;
+  font-family: "muse-500", Arial, sans-serif;
+}
+
+#about .container .row .col-md-4 .card a img {
+  opacity: 0.7;
+  height: 100px;
+}
+
+#about .container .row .col-md-4 .card a img:hover {
+  opacity: 1;
+  transition: all 0.7s ease-out;
+}
+
+#about .container .row .col-md-4 .card .card-text {
+  line-height: 1.3;
+}
+
+/* --------------- CART ---------------- */
 .cart-overlay {
   position: fixed;
   top: 0;
@@ -464,6 +514,7 @@ a {
   z-index: 2;
   visibility: hidden;
 }
+
 .cart {
   position: fixed;
   top: 0;
@@ -480,12 +531,15 @@ a {
   transform: translateX(100%);
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
 }
+
 .showCart {
   transform: translateX(0);
 }
+
 .transparentBcg {
   visibility: visible;
 }
+
 @media screen and (min-width: 768px) {
   .cart {
     width: 30vw;
@@ -497,6 +551,7 @@ a {
   font-size: 4rem;
   cursor: pointer;
 }
+
 .cart h2 {
   text-transform: capitalize;
   text-align: center;
@@ -518,12 +573,13 @@ a {
   margin-top: 20px;
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
 }
+
 .banner-btns:hover {
   background: transparent;
   color: black;
 }
 
-/*---------- Cart Item -------------------- */
+/*---------- CART ITEM -------------------- */
 .cart-item {
   display: grid;
   align-items: center;
@@ -531,6 +587,7 @@ a {
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0;
 }
+
 .cart-item img {
   width: 145px;
   height: 145px;
@@ -542,40 +599,46 @@ a {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
+
 .cart-item h5 {
   margin: 0.2rem 0;
   font-size: 1rem;
   letter-spacing: var(--mainSpacing);
-  margin-bottom: 50px;;
+  margin-bottom: 50px;
+  ;
 }
+
 .item-amount {
   text-align: center;
   font-weight: bold;
- 
+
 }
+
 .remove-item {
   color: black;
   cursor: pointer;
   font-size: 1rem;
 }
+
 .fa-chevron-up,
 .fa-chevron-down {
   color: var(--primaryColor);
   cursor: pointer;
 }
-/*---------- End of Cart Item -------------------- */
+
+/*---------- CART FOOTER -------------------- */
 
 .cart-footer {
   margin-top: .3rem;
   letter-spacing: var(--mainSpacing);
   text-align: center;
 }
+
 .cart-footer h3 {
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
 
-/* --------------- End of Cart ---------------- */
 
 /* --------------- BAGS ---------------- */
 
@@ -591,21 +654,19 @@ a {
   position: relative;
   overflow: hidden;
 }
+
 .bag-btn {
-  /* position: absolute; */
-  /* top: 70%;
-  right: 0; */
+
   background: #edebe4;
   border: none;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
   letter-spacing: var(--mainSpacing);
   font-weight: bold;
-  /* transition: var(--mainTransition);
-  transform: translateX(101%); */
   cursor: pointer;
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
 }
+
 .bag-btn:hover {
   color: black;
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
@@ -614,9 +675,11 @@ a {
 .fa-shopping-cart {
   margin-right: 0.5rem;
 }
+
 .img-container:hover .bag-btn {
   transform: translateX(0);
 }
+
 .product-img {
   display: block;
   width: 100%;
@@ -624,24 +687,6 @@ a {
   transition: var(--mainTransition);
 }
 
-.toy-img {
-  display: block;
-  width: 100%;
-  min-height: 12rem;
-  transition: var(--mainTransition);
-}
-.activity-img{
-  display: block;
-  width: 100%;
-  min-height: 12rem;
-  transition: var(--mainTransition);
-}
-.furniture-img {
-  display: block;
-  width: 100%;
-  min-height: 12rem;
-  transition: var(--mainTransition);
-}
 .img-container:hover .product-img {
   opacity: 0.5;
 }
@@ -651,35 +696,17 @@ a {
   font-size: 1.1rem;
   margin-top: 1rem;
   letter-spacing: var(--mainSpacing);
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .product .toys .activities .furnitures .about h4 {
   margin-top: 0.7rem;
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
-  text-align: center!important;
+  text-align: center !important;
 }
 
-/********************************* ABOUT ***********************************/
-#about {
-  padding: 50px 0;
-  font-family: "muse-500", Arial, sans-serif;
-}
 
-#about .container .row .col-md-4 .card a img {
-  opacity: 0.7;
-  height: 100px;
-}
-
-#about .container .row .col-md-4 .card a img:hover {
-  opacity: 1;
-  transition: all 0.7s ease-out;
-}
-
-#about .container .row .col-md-4 .card .card-text {
-  line-height: 1.3;
-}
 /**************************** FOOTER ***************************/
 footer {
   padding: 20px;
@@ -745,7 +772,7 @@ ul {
     margin-top: 90px;
     font-family: "OpenSans", Helvetica, Arial, sans-serif;
   }
- 
+
   .main-header {
     min-height: calc(100vh - 240px);
     background: url("https://www.gap.com/Asset_Archive/GPWeb/content/0017/379/277/assets/unrec_01/G26739_KT_EarlyBTSBacktoSchool_HPMain_DESK.jpg") center/cover no-repeat;
@@ -755,18 +782,19 @@ ul {
   }
 
   .col p {
-   margin-left: -30px!important;
-    margin-right: -30px!important;
+    margin-left: -30px !important;
+    margin-right: -30px !important;
     font-size: 13px;
   }
 
-  .about-resp  {
-   padding-left: 0px!important;
-    margin-right: -95px!important; 
+  .about-resp {
+    padding-left: 0px !important;
+    margin-right: -95px !important;
     width: 100%;
-    font-size: 13px!important;
+    font-size: 13px !important;
   }
-  .navbar-brand img{
+
+  .navbar-brand img {
     width: 80px;
     height: 60px;
     margin-top: -10px
@@ -774,13 +802,15 @@ ul {
 
   .icon-end {
     padding-top: 25px;
-   
+
   }
+
   .iconic-media {
     text-indent: 220%;
     white-space: nowrap;
     overflow: hidden;
   }
+
   #navbar.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
