@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   </head>
 
   <body id="top">
@@ -30,7 +31,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <ul class="navbar-nav ml-auto centers">
+        <ul class="navbar-nav ml-auto centers animated slideInRight">
           <li class="nav-item">
             <a class="nav-link btn" href="shop.html">SHOP</a>
           </li>
@@ -58,15 +59,13 @@
     <!-- end of navbar -->
 
     <header class="main-header">
-      <button class="banner-btn">BRING JOY TO THE KIDS</button>
-      </div>
-      </div>
+      <button class="banner-btn animated slideInLeft">BRING JOY TO THE KIDS</button>
     </header>
 
     <section>
       <div class="container text-center" style="padding-left: 70px; padding-right: 70px; margin-top: 50px;">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 wow bounceInDown" data-wow-delay="0.5s">
             <div class="card">
               <div class="icon-container">
                 <img
@@ -81,7 +80,7 @@
             </div>
           </div> <!-- End col-md-4 ! -->
 
-          <div class="col-md-6">
+          <div class="col-md-6 wow bounceInDown" data-wow-delay="1s">
 
             <div class="card">
               <div class="icon-container">
@@ -99,7 +98,7 @@
           </div> <!-- End col-md-4 ! -->
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 wow bounceInDown" data-wow-delay="1.2s">
             <div class="card">
               <div class="icon-container">
                 <img src="https://oldnavy.gap.com/webcontent/0016/587/187/cn16587187.jpg" alt="Encourage" width="360px"
@@ -113,7 +112,7 @@
               </div>
             </div>
           </div> <!-- End col-md-4 ! -->
-          <div class="col-md-6">
+          <div class="col-md-6 wow bounceInDown" data-wow-delay="1.7s">
             <div class="card">
               <div class="icon-container">
                 <img
@@ -137,7 +136,7 @@
         <h4 class="orders" style="text-align: center; font-size: 26px; font-weight: bold;">New Additions <i
             class="fa fa-star" style="font-size: 29px; color:black; margin: 8px;"></i></h4>
 
-        <div class="row" style="justify-content: center;">
+        <div class="row animated slideInLeft" style="justify-content: center;">
 
           <div class="col-md-3">
             <div class="card ordering">
@@ -174,7 +173,7 @@
             </div>
           </div> <!-- End col-md-4 ! -->
         </div> <!-- End row ! -->
-        <div class="row" style="justify-content: center; margin-top: 19px;">
+        <div class="row animated slideInRight" style="justify-content: center; margin-top: 19px;">
 
           <div class="col-md-3">
             <div class="card ordering">
@@ -313,6 +312,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+
+    </script>
+
   </body>
 
 </html>
